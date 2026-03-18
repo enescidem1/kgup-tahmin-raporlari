@@ -7,7 +7,7 @@ Günlük KGÜP tahmin Excel dosyalarından tesis bazlı CSV raporları üretir v
 ```bash
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install pyyaml pandas openpyxl python-dotenv
+pip install -r requirements.txt
 ```
 
 ## Klasör Yapısı

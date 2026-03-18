@@ -1,0 +1,74 @@
+path: "/path/to/wattica-sisecam-platform/initial/seed/downloads/reports/prediction_reports/daily"
+recipients:
+  - "enes.cidem@wattica.ai"
+  - "tufan.ozkan@wattica.ai"
+  
+facility:
+  toplam:
+    name:
+      - "EAK TOPLAM"
+    facility_id:
+      - 3192979
+    order:
+      - 1
+      
+  ivedik:
+    name:
+      - "EAK İVEDİK"
+    facility_id:
+      - 5000219
+    order:
+      - 2
+    meter_ids:
+      - 739168
+      - 739184
+      - 2345245
+      - 2345258
+
+  yenisehir:
+    name:
+      - "EAK YENİŞEHİR"
+    facility_id:
+      - 5000028
+    order:
+      - 3
+    meter_ids:
+      - 10964
+
+  inegol:
+    name:
+      - "EAK İNEGÖL"
+    facility_id:
+      - 5000185
+    order:
+      - 4
+    meter_ids:
+      - 500128
+      - 7314145
+
+  dudullu:
+    name:
+      - "EAK DUDULLU"
+    facility_id:
+      - 5000198
+    order:
+      - 5
+    meter_ids:
+      - 6291918
+      - 9913
+
+  anadolu:
+    name:
+      - "EAK ANADOLU"
+    facility_id:
+      - 3222958
+    order:
+      - 6
+    meter_ids:
+      - 202260778
+      - 1216293
+      - 7895198
+      - 7895197
+      - 7895196
+      - 7895195
+      - 7895199

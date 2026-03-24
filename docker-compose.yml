@@ -1,0 +1,15 @@
+services:
+  kgup-tahmin-raporlari:
+    image: wattica06/kgup-tahmin-raporlari:latest
+    container_name: kgup_tahmin_raporlari
+    restart: unless-stopped
+    volumes:
+      - ./data/prediction_reports/sisecam/daily:/data/prediction_reports/sisecam/daily
+    env_file:
+      - .env
+    networks:
+      - met-network
+
+networks:
+  met-network:
+    external: true

@@ -2,6 +2,8 @@ path: "/data/prediction_reports/sisecam/daily"
 recipients:
   - "enes.cidem@wattica.ai"
   - "tufan.ozkan@wattica.ai"
+  - "nebi.kiramanlioglu@wattica.ai"
+  - "ege.varolgunes@wattica.ai"
   
 facility:
   toplam:

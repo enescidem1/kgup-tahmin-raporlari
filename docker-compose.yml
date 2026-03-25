@@ -4,7 +4,7 @@ services:
     container_name: kgup_tahmin_raporlari
     restart: unless-stopped
     volumes:
-      - ./data/prediction_reports/sisecam/daily:/data/prediction_reports/sisecam/daily
+      - /home/ubuntu/git/wattica-sisecam_enerji-platform/initial/seed/downloads/reports/prediction_reports/daily:/data/prediction_reports/sisecam/daily:ro
     env_file:
       - .env
     networks:

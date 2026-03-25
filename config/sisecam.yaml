@@ -1,4 +1,4 @@
-path: "/home/ubuntu/git/wattica-sisecam_enerji-platform/initial/seed/downloads/reports/prediction_reports/daily"
+path: "/data/prediction_reports/sisecam/daily"
 recipients:
   - "enes.cidem@wattica.ai"
   - "tufan.ozkan@wattica.ai"

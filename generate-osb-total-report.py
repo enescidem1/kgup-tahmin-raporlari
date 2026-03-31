@@ -152,6 +152,7 @@ def build_facility_csv(
             if all_available else pd.Series([0.0] * 24)
         )
         miktar_series = -(toplam_series - meters_total)
+        miktar_series = miktar_series.clip(upper=0)  # pozitif değerleri 0'a çek
     else:
         meter_ids = [str(mid) for mid in facility_cfg["meter_ids"]]
         available = [col for col in meter_ids if col in day_df.columns]
@@ -159,6 +160,7 @@ def build_facility_csv(
         if missing:
             print(f"  [WARN] {name}: Şu meter_id'ler Excel'de bulunamadı → {missing}", file=sys.stderr)
         miktar_series = -day_df[available].sum(axis=1) if available else pd.Series([0.0] * 24)
+        miktar_series = miktar_series.clip(upper=0)  # pozitif değerleri 0'a çek
 
     out_df = pd.DataFrame(
         {

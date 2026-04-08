@@ -79,3 +79,13 @@ facility:
       - 7895196
       - 7895195
       - 7895199
+
+  iskenderun:
+    name:
+      - "EAK İSKENDERUN"
+    facility_id:
+      - 5000214
+    order:
+      - 7
+    meter_ids:
+      - 235404704021202357
